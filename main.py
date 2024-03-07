@@ -17,10 +17,11 @@ def main():
     print("--- Begin report of books/frankenstein.txt ---")
     print(f'{word_count} words found in the document')
     for dict in list_of_dict:
-        for k,l in dict.items():
-            if k.isalpha():
-                print(f'The character "{k}" was found {l} times')
-
+        value1 = dict["char"]
+        value2 = dict["num"]
+        if value1.isalpha():
+            print(f'The character "{value1}" was found {value2} times')
+    print("- - - End Report - - -")
 
 if __name__ == "__main__":
     main()
